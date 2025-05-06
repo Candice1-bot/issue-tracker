@@ -4,4 +4,4 @@ export { default as Spinner } from "./IssueStatusBadge";
 export { default as IssueStatusBadge } from "./IssueStatusBadge";
 
 
- export { default as Skeleton } from './Skeleton'
+ export { default as Skeleton } from './Skeleton';
