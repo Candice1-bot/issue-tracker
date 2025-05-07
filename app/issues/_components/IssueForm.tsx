@@ -35,6 +35,7 @@ const IssueForm = ({ issue }: { issue?: Issue }) => {
   const onSubmit = handleSubmit(async (data) => {
     try {
       setSubmitting(true);
+
       await axios.post("/api/issues", data);
       router.push("/issues");
     } catch (error) {
