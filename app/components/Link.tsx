@@ -1,15 +1,17 @@
 import NextLink from "next/link";
 import { Link as ReadixLink } from "@radix-ui/themes";
+import { ComponentProps } from "react";
 
-interface Props {
-  href: string;
+interface Props extends ComponentProps<typeof NextLink> {
   children: string;
 }
-const Link = ({ href, children }: Props) => {
+const Link = ({ href, children, ...props }: Props) => {
   return (
-    <NextLink href={href} passHref legacyBehavior>
-      <ReadixLink>{children}</ReadixLink>
-    </NextLink>
+    <ReadixLink asChild>
+      <NextLink href={href} {...props}>
+        {children}
+      </NextLink>
+    </ReadixLink>
   );
 };
 

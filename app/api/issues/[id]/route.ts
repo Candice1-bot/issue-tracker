@@ -8,7 +8,7 @@ interface Props {
 export async function PATCH (request: NextRequest, {params}: Props){
 
  const {id} = await params;
- const body = await request.json() 
+ const body = await request.json()
 
  const validation = issueSchema.safeParse(body);
  if (!validation.success)
