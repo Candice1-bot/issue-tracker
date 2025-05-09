@@ -1,6 +1,5 @@
 import prisma from "@/app/lib/prisma";
 import { issueSchema } from "@/app/validationSchema";
-import { error } from "console";
 import { NextRequest, NextResponse } from "next/server";
 interface Props {
     params: Promise<{id: string}>
