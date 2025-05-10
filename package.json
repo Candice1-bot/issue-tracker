@@ -26,6 +26,7 @@
     "eslint-config-next": "15.3.1",
     "init": "^0.1.2",
     "next": "15.3.1",
+    "next-auth": "^4.24.11",
     "postcss": "8.5.3",
     "postcss-import": "^16.1.0",
     "react": "19.1.0",
