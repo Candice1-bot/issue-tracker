@@ -27,9 +27,8 @@ const IssuesPage = async ({ searchParams }: Props) => {
 
   const aliasOfSearchParams = await searchParams;
 
-  // console.log(status);
+  //validation
   const statuses = Object.values(Status);
-
   const status = statuses.includes(unvalidateStatus)
     ? unvalidateStatus
     : undefined;
