@@ -12,8 +12,8 @@ interface Props {
 const IssueSummary = ({ open, inProgress, closed }: Props) => {
   const containners: { label: string; value: number; status: Status }[] = [
     { label: "Open Issues", value: open, status: "OPEN" },
-    { label: "In-progress Issues", value: open, status: "IN_PROGRESS" },
-    { label: "Closed Issues", value: open, status: "CLOSED" },
+    { label: "In-progress Issues", value: inProgress, status: "IN_PROGRESS" },
+    { label: "Closed Issues", value: closed, status: "CLOSED" },
   ];
   return (
     <Flex gap="4">
